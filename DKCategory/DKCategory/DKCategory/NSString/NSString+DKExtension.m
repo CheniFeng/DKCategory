@@ -147,5 +147,21 @@
     return [mString dk_trimmingHTML];
 }
 
+#pragma mark- *** JSON ***
+
+- (nullable id)dk_jsonValue {
+    NSError *error = nil;
+    NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    id result = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                options:kNilOptions
+                                                  error:&error];
+    if (error != nil) {
+#ifdef DEBUG
+        NSLog(@"Fail To Get JSON Value From String: %@, error: %@", self, error);
+#endif
+    }
+    return result;
+}
+
 
 @end

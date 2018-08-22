@@ -95,6 +95,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)dk_trimmingScriptsAndHTML;
 
 
+#pragma mark- *** JSON ***
+
+/**
+ *  将JSON字符串转换成相应对象
+ *
+ *  @return 转换后的对象字典或者数组,可为nil
+ */
+- (nullable id)dk_jsonValue;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,6 +29,7 @@
 		1BDAC0912129504E0034C82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BDAC09B212954950034C82E /* NSString+DKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DKExtension.h"; sourceTree = "<group>"; };
 		1BDAC09C212954950034C82E /* NSString+DKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DKExtension.m"; sourceTree = "<group>"; };
+		1BDAC09F212DCB270034C82E /* DKCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		1BDAC0982129508A0034C82E /* DKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				1BDAC09F212DCB270034C82E /* DKCategory.h */,
 				1BDAC09A212954150034C82E /* NSString */,
 			);
 			path = DKCategory;
