@@ -13,6 +13,7 @@
 		1BDAC08C2129504E0034C82E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDAC08B2129504E0034C82E /* Assets.xcassets */; };
 		1BDAC08F2129504E0034C82E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDAC08D2129504E0034C82E /* LaunchScreen.storyboard */; };
 		1BDAC0922129504E0034C82E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDAC0912129504E0034C82E /* main.m */; };
+		1BDAC09D212954950034C82E /* NSString+DKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDAC09C212954950034C82E /* NSString+DKExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1BDAC08E2129504E0034C82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BDAC0902129504E0034C82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDAC0912129504E0034C82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BDAC09B212954950034C82E /* NSString+DKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DKExtension.h"; sourceTree = "<group>"; };
+		1BDAC09C212954950034C82E /* NSString+DKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DKExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		1BDAC0982129508A0034C82E /* DKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				1BDAC09A212954150034C82E /* NSString */,
 			);
 			path = DKCategory;
 			sourceTree = "<group>";
@@ -85,6 +89,15 @@
 				1BDAC08D2129504E0034C82E /* LaunchScreen.storyboard */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		1BDAC09A212954150034C82E /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				1BDAC09B212954950034C82E /* NSString+DKExtension.h */,
+				1BDAC09C212954950034C82E /* NSString+DKExtension.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDAC09D212954950034C82E /* NSString+DKExtension.m in Sources */,
 				1BDAC0872129504E0034C82E /* ViewController.m in Sources */,
 				1BDAC0922129504E0034C82E /* main.m in Sources */,
 				1BDAC0842129504E0034C82E /* AppDelegate.m in Sources */,
@@ -302,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA3YNDBNC;
 				INFOPLIST_FILE = DKCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA3YNDBNC;
 				INFOPLIST_FILE = DKCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
